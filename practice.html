@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <label for="num1">Number 1:</label>
+    <input type="number" id="num1" value="">
+
+    <label for="num2">Number 2:</label>
+    <input type="number" id="num2" value="">
+
+    <button type="button" onclick="compute_num('add')">Add numbers</button>
+
+    <button type="button" onclick="showAge()">Submit</button>
+    <p id="sum">Sum of a and b is:</p>
+
+    <script>
+
+    function compute_num(action){
+        let num1 = document.getElementById('num1').value;
+        let num2 = document.getElementByID('num2').value;
+
+        let answer ="";
+
+        if(action === "add"){
+            answer = Number(num1) + Number(num2);
+        }else if(action === "subtract"){
+            answer = Number(num1) - Number(num2);
+        }else if(action === "divide"){
+            answer = Number(num1) * Number(num2);
+
+        document.getElementById("sum").innerHTML= "The answer is " + answer;
+        }
+    }
+        function showAge(){
+            let a = num1.value;
+            let b = num2.value;
+            let sum = Number(a) + Number(b);
+            document.getElementById("sum").innerHTML= "Total sum=" + sum;
+        }
+
+
+    </script>
+
+</body>
+</html>

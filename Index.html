@@ -5,9 +5,45 @@
   <link rel="stylesheet" href="style.css">
  </head>
  <body>
+
+
   <h1>Welcome to JavaScript Lab</h1>
+
   <p id="demo">This text will change using JavaScript.</p>
+
   <button onclick="changeText()">Click Me!</button>
-  <script src="script.js"></script>
+
+<h2>Display age</h2>
+<button type="button" onclick="ShowAge()">Click to display your age</button>
+
+<p id="age">Display age</p>
+
+<input type="text" id="ageId" value="age">
+
+<h2>Sum of numbers</h2>
+<button type="button" onclick="showAge()">Your total sum is:</button>
+<input type="text" id="num1" value="">
+<input type="text" id="num2" value="">
+<p id="sum">Sum of a and b is:</p>
+
+
+  <script>
+            function changeText() {
+        document.getElementById("sum").innerHTML = "Text changed using JavaScript!";
+        }
+    
+        function ShowAge() {
+            let a = num1.value;
+            let b = num2.value;
+            let sum = a + b;
+            document.getElementById("sum").innerHTML= sum;
+        }
+
+  </script>
+
+
+
+
+
  </body>
  </html>
